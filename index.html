@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Goykar | Turning Ideas into Reality</title>
+    <meta name="description" content="Portfolio of Rohit Goykar, an IT student and aspiring Data Scientist specializing in Predictive Modeling, Machine Learning, and Web Technologies.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="light-theme">
+    <!-- Grid Overlay Background -->
+    <div class="grid-overlay"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Rohit.G<span class="logo-accent">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle visual theme">
+                    <!-- Sun Icon for Light Mode -->
+                    <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon for Dark Mode -->
+                    <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title reveal">
+                        Hi, I'm <span class="gradient-text">Rohit Goykar</span>
+                    </h1>
+                    <p class="hero-description reveal">
+                        I am Rohit Goykar, a B.Tech. Information Technology student with a passion for software development and technology. I am eager to learn new skills, work on innovative projects, and build a successful career in the IT industry. I am a dedicated, hardworking,
+                        and enthusiastic individual who enjoys solving technical challenges and learning continuously.
+                        <div class="hero-socials reveal">
+                            <a href="https://www.hackerrank.com/profile/rohitgoykar2912" target="_blank" rel="noopener" class="social-link" title="HackerRank" id="social-hackerrank">
+                                <!-- HackerRank Custom SVG Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.012 0L5.3 3.877v7.756L12.012 15.5l6.713-3.867V3.877L12.012 0zm4.508 10.462l-4.508 2.597-4.508-2.597V5.275l4.508-2.597 4.508 2.597v5.187z"/>
+                                <path d="M8.706 7.429v1.942l3.306 1.905 3.306-1.905V7.429l-3.306-1.906-3.306 1.906z"/>
+                            </svg>
+                            </a>
+                            <a href="https://leetcode.com/u/Rohit_Goykar/" target="_blank" rel="noopener" class="social-link" title="LeetCode" id="social-leetcode">
+                                <!-- LeetCode Custom SVG Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16.102 17.93l-2.697 2.607c-.466.451-1.111.71-1.744.71-.633 0-1.277-.26-1.744-.71l-5.694-5.51c-.466-.451-.71-1.077-.71-1.69 0-.612.244-1.238.71-1.69l5.694-5.509c.467-.452 1.11-.71 1.744-.71.633 0 1.278.258 1.744.71l2.697 2.606c.48.465.48 1.218 0 1.683-.48.466-1.258.466-1.738 0l-1.8-1.74c-.234-.226-.593-.355-.91-.355-.317 0-.676.13-.91.356l-4.784 4.63c-.234.226-.358.532-.358.84 0 .307.124.613.358.84l4.784 4.63c.234.225.593.355.91.355.317 0 .676-.13.91-.355l1.8-1.74c.48-.466 1.258-.466 1.738 0 .48.465.48 1.218 0 1.683zm3.766-7.428l-1.8 1.74c-.48.466-1.258.466-1.738 0-.48-.465-.48-1.219 0-1.684l1.8-1.74c.48-.465 1.258-.465 1.738 0 .48.466.48 1.219 0 1.684z"/>
+                            </svg>
+                            </a>
+                        </div>
+
+                        <div class="hero-actions reveal">
+                            <a href="#contact" class="btn btn-primary" id="btn-hero-contact">Contact Me</a>
+                            <a href="#projects" class="btn btn-secondary" id="btn-hero-projects">View Projects</a>
+                        </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="profile-photo-wrapper">
+                        <!-- Ambient Glow Ring -->
+                        <div class="profile-glow"></div>
+                        <!-- Profile Image Frame -->
+                        <div class="profile-frame">
+                            <img src="assets/profile.jpg" alt="Rohit Goykar Profile Photo" class="profile-img">
+                        </div>
+                        <!-- Tech badges or floating particles overlay -->
+                        <div class="floating-badge badge-python">
+                            <span>Web Developer</span>
+                        </div>
+                        <div class="floating-badge badge-ml">
+                            <span>Problem Solver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section & Objective -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <h2 class="section-title reveal">Career Objective</h2>
+                <div class="about-grid">
+                    <div class="about-card glass reveal">
+                        <div class="card-glow"></div>
+                        <p class="objective-text">
+                            Detail-oriented and motivated <strong>B.Tech in Information Technology</strong> student. To secure a challenging position in a reputed organization where I can utilize my technical and problem-solving skills, gain practical
+                            experience, and contribute to the growth of the company while continuously learning and improving.
+                        </p>
+                    </div>
+
+                    <div class="about-stats-grid reveal">
+                        <div class="stat-card glass">
+                            <h3 class="stat-num">B.Tech</h3>
+                            <p class="stat-label">Info Tech</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <h3 class="stat-num">7.86</h3>
+                            <p class="stat-label">B.Tech CGPA</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <h3 class="stat-num">4+</h3>
+                            <p class="stat-label">Core Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section" id="education">
+            <div class="section-container">
+                <h2 class="section-title reveal">Education</h2>
+                <div class="timeline">
+                    <!-- B.Tech -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                        </div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <span class="timeline-period">2023 – 2027</span>
+                                <h3 class="timeline-degree">Bachelor of Technology (B.Tech)</h3>
+                                <span class="timeline-field">Information Technology</span>
+                            </div>
+                            <h4 class="timeline-institution">Sanjivani College of Engineering, Kopargaon</h4>
+                            <div class="timeline-performance">
+                                <span class="performance-label">CGPA:</span>
+                                <span class="performance-val highlight">7.86</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HSC -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 2v20"></path></svg>
+                        </div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <span class="timeline-period">Completed</span>
+                                <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
+                            </div>
+                            <div class="timeline-performance">
+                                <span class="performance-label">Status:</span>
+                                <span class="performance-val">Passed</span>
+                                <span class="performance-divider">|</span>
+                                <span class="performance-label">Percentage:</span>
+                                <span class="performance-val highlight">71.17%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SSC -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 2v20"></path></svg>
+                        </div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <span class="timeline-period">Completed</span>
+                                <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
+                            </div>
+                            <div class="timeline-performance">
+                                <span class="performance-label">Status:</span>
+                                <span class="performance-val">Passed</span>
+                                <span class="performance-divider">|</span>
+                                <span class="performance-label">Percentage:</span>
+                                <span class="performance-val highlight">89.40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="section-container">
+                <h2 class="section-title reveal">Technical Skills</h2>
+                <div class="skills-grid">
+
+                    <!-- Data Science & ML -->
+                    <div class="skill-category-card glass reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                            </div>
+                            <h3>Data Science </h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Python</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card glass reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>HTML,CSS,Java Script</li>
+                            <li>C</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+
+                    <!-- Database Systems -->
+                    <div class="skill-category-card glass reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+                            </div>
+                            <h3>Database Systems</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>SQL Optimization</li>
+                            <li>Clean Database Normalization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skill-category-card glass reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="15" x="2" y="3" rx="2"></rect><line x1="6" y1="21" x2="18" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <h3>Web Technologies</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>HTML / CSS</li>
+                            <li>Flask</li>
+                            <li>Streamlit</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Focus Areas -->
+                    <div class="skill-category-card glass reveal full-width-card">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
+                            </div>
+                            <h3>Tools & Focus Areas</h3>
+                        </div>
+                        <div class="pills-container">
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">HackerRank</span>
+                            <span class="skill-pill">DBMS Architecture</span>
+                            <span class="skill-pill">Problem Solving</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Languages & Soft Skills Accordion Grid -->
+                <div class="additional-skills-grid reveal">
+                    <div class="add-skills-card glass">
+                        <h3>Soft Skills</h3>
+                        <div class="pills-container">
+                            <span class="soft-pill">Adaptability</span>
+                            <span class="soft-pill">Emotional Intelligence</span>
+                            <span class="soft-pill">Team Collaboration</span>
+                            <span class="soft-pill">Analytical Thinking</span>
+                            <span class="soft-pill">Clear Communication</span>
+                            <span class="soft-pill">Quick Learning Ability</span>
+                        </div>
+                    </div>
+
+                    <div class="add-skills-card glass">
+                        <h3>Languages</h3>
+                        <div class="languages-list">
+                            <div class="lang-item">
+                                <span>English</span>
+                                <div class="lang-bar"><span style="width: 100%;"></span></div>
+                            </div>
+                            <div class="lang-item">
+                                <span>Hindi</span>
+                                <div class="lang-bar"><span style="width: 100%;"></span></div>
+                            </div>
+                            <div class="lang-item">
+                                <span>Marathi</span>
+                                <div class="lang-bar"><span style="width: 100%;"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="section-container">
+                <h2 class="section-title reveal">Technical Projects</h2>
+
+                <!-- Project Filter Buttons -->
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ds">Data Science & ML</button>
+                    <button class="filter-btn" data-filter="sec">Cyber Security & Web Dev</button>
+                    <button class="filter-btn" data-filter="db">Database & Apps</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: TrustVote (Cyber Security & Web Dev) -->
+                    <div class="project-card glass reveal" data-category="sec" id="proj-trustvote">
+                        <div class="project-header">
+                            <span class="project-tag tag-sec">Cyber Security & Web Dev</span>
+                            <h3 class="project-title">TrustVote: A Secure QR-Based Voting & Validation Framework</h3>
+                            <span class="project-date">DIPEX-2026 Project</span>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Developed a secure QR-based voting and voter validation framework representing a Working Model at the state-level DIPEX exhibition.</li>
+                                <li>Replaced manual, error-prone voter verification methods with a highly secure digital validation methodology.</li>
+                                <li>Implemented robust backend cryptographic mechanisms to validate voter QR tokens, prevent double voting, and ensure voter privacy.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>Cyber Security</span>
+                            <span>QR Validation</span>
+                            <span>Web Development</span>
+                            <span>Flask/Python</span>
+                        </div>
+                    </div>
+                    <!-- Project 1: Rainfall Prediction -->
+                    <div class="project-card glass reveal" data-category="ds" id="proj-rainfall">
+                        <div class="project-header">
+                            <span class="project-tag tag-ds">Data Science / Academic</span>
+                            <h3 class="project-title">Rainfall Prediction Using Historical Climate Data</h3>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Developed a predictive machine learning model utilizing historical climate datasets to forecast rainfall with high precision.</li>
+                                <li>Trained and evaluated analytics models to isolate robust environmental indicators and ensure high-fidelity weather forecasting metrics.</li>
+                                <li>Designed and deployed an interactive web dashboard interface using Flask/Streamlit to serve real-time prediction conclusions.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Flask</span>
+                            <span>Streamlit</span>
+                            <span>Pandas</span>
+                            <span>Scikit-Learn</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Inventory Management -->
+                    <div class="project-card glass reveal" data-category="db" id="proj-inventory">
+                        <div class="project-header">
+                            <span class="project-tag tag-db">Database Project</span>
+                            <h3 class="project-title">Inventory Management System</h3>
+                            <span class="project-date">2024 – 2025</span>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Designed and engineered a relational database management system to manage structured supplier, sales, and catalog datasets.</li>
+                                <li>Formulated optimized SQL queries and complex filters to track, refine, and update core operational business transactions.</li>
+                                <li>Applied rigorous database normalization concepts to eliminate data redundancies and ensure full transactional data integrity.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>SQL</span>
+                            <span>MySQL</span>
+                            <span>Database Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Sanitary Shop Mobile App -->
+                    <div class="project-card glass reveal" data-category="db" id="proj-sanitary">
+                        <div class="project-header">
+                            <span class="project-tag tag-db">Local Business Solution</span>
+                            <h3 class="project-title">Sanitary Shop Mobile Application</h3>
+                            <span class="project-date">Jun 2024 – Nov 2024</span>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-bullets">
+                                <li>Developed a feature-rich mobile app tailored to handle complete digital operational workflows for a local brick-and-mortar storefront.</li>
+                                <li>Built secure operational modules to process safe customer checkout records, item databases, and active logistical order tracking.</li>
+                                <li>Boosted regional metrics and store efficiency by modernizing manual stock ledgers into a structured digital inventory system.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span>Mobile App Design</span>
+                            <span>Embedded Data Modules</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section class="certifications-section" id="certifications">
+            <div class="section-container">
+                <h2 class="section-title reveal">Certifications & Achievements</h2>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1: SQL Badge -->
+                    <a href="https://www.hackerrank.com/profile/rohitgoykar2912" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        </div>
+                        <h3 class="cert-title">5-Star SQL Badge</h3>
+                        <p class="cert-issuer">HackerRank Problem Solving</p>
+                        <span class="cert-link-btn">Verify Profile &rarr;</span>
+                    </a>
+
+                    <!-- Cert 2: E-Business (NPTEL) -->
+                    <a href="assets/e_business_cert.jpg" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="cert-title">E-Business Certificate (Elite)</h3>
+                        <p class="cert-issuer">NPTEL | IIT Kharagpur (Jul-Oct 2025)</p>
+                        <span class="cert-link-btn">View Certificate &rarr;</span>
+                    </a>
+
+                    <!-- Cert 3: Java Master (Udemy) -->
+                    <a href="https://ude.my/UC-36364fb9-1f93-425c-8d98-bd1265692f22" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="cert-title">JAVA Programming - Beginner to Master</h3>
+                        <p class="cert-issuer">Udemy | Instructor Abdul Bari (Nov 2024)</p>
+                        <span class="cert-link-btn">Verify Credential &rarr;</span>
+                    </a>
+
+                    <!-- Cert 4: C Programming Fundamentals (Coursera) -->
+                    <a href="https://coursera.org/verify/2NKKHB2CWBWD" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="cert-title">Fundamentals of Computer Programming With C</h3>
+                        <p class="cert-issuer">Coursera Project Certificate (Dec 2023)</p>
+                        <span class="cert-link-btn">Verify Credential &rarr;</span>
+                    </a>
+
+                    <!-- Cert 5: C Variables Input Output (Coursera) -->
+                    <a href="https://coursera.org/verify/FKL53CU6846T" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="cert-title">Introduction to C Programming Variables Input Output</h3>
+                        <p class="cert-issuer">Coursera Project Certificate (Dec 2023)</p>
+                        <span class="cert-link-btn">Verify Credential &rarr;</span>
+                    </a>
+
+                    <!-- Cert 6: Python Programming -->
+                    <a href="https://coursera.org" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="cert-title">Python Programming</h3>
+                        <p class="cert-issuer">Coursera Certificate</p>
+                        <span class="cert-link-btn">Verify &rarr;</span>
+                    </a>
+
+                    <!-- Cert 7: State-Level DIPEX Hackathon -->
+                    <a href="assets/dipex_hackathon_cert.jpg" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <h3 class="cert-title">State-Level DIPEX Hackathon</h3>
+                        <p class="cert-issuer">Convenor, DIPEX-2026 Certificate of Participation</p>
+                        <span class="cert-link-btn">View Certificate &rarr;</span>
+                    </a>
+
+                    <!-- Cert 8: English Thesis -->
+                    <a href="assets/english_thesis_cert.jpg" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m16 10-4 4-2-2"></path></svg>
+                        </div>
+                        <h3 class="cert-title">English for Thesis Writing</h3>
+                        <p class="cert-issuer">NPTEL | IIT Kharagpur (Elite Certificate, 87%)</p>
+                        <span class="cert-link-btn">View Certificate &rarr;</span>
+                    </a>
+
+                    <!-- Cert 9: Employment Communication -->
+                    <a href="assets/employment_communication.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+                        <div class="cert-badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m16 10-4 4-2-2"></path></svg>
+                        </div>
+                        <h3 class="cert-title">Employment Communication A Lab Based</h3>
+                        <p class="cert-issuer">NPTEL Certificate</p>
+                        <span class="cert-link-btn">View Document &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <h2 class="section-title reveal">Get In Touch</h2>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-panel glass reveal">
+                        <h3>Contact Details</h3>
+                        <p>Feel free to reach out to me for internship opportunities, collaborations, or technical discussions.</p>
+
+                        <div class="contact-details-list">
+                            <!-- Email -->
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span>Email</span>
+                                    <a href="mailto:rohitgoykar2012@gmail.com" class="detail-link">rohitgoykar2012@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span>Phone</span>
+                                    <a href="tel:+919860483208" class="detail-link">+91 9860483208</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span>Location</span>
+                                    <p>Sangamner, Maharashtra - 422605</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form glass reveal" id="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" required placeholder="Enter subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" required placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="btn-submit-form">Send Message</button>
+
+                        <!-- Alert message container -->
+                        <div class="form-alert" id="form-alert"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copy">&copy; <span id="current-year">2026</span> Rohit Goykar. All rights reserved.</p>
+            <p class="footer-declaration">I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
